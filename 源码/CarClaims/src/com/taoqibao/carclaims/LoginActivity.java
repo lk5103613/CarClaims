@@ -19,6 +19,11 @@ public class LoginActivity extends BaseActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
 		
+		mDataFetcher.fetchBrandList(new Listener<String>() {
+			@Override
+			public void onResponse(String response) {
+			}
+		}, null);
 		initView();
 	}
 	

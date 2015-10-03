@@ -22,6 +22,7 @@
             android:layout_width="40dip"
             android:layout_height="match_parent"
             android:gravity="center"
+            android:onClick="back"
             android:orientation="vertical" >
 
             <ImageView
@@ -68,7 +69,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="10dip"
+            android:layout_marginLeft="10dip"
             android:text="输入服务项目名称/首字母模糊查询"
             android:textColor="#cccccc"
             android:textSize="11sp" />
@@ -100,6 +101,7 @@
                     android:background="#f3f3f3"
                     android:gravity="center_vertical"
                     android:paddingLeft="10dip"
+                    android:paddingRight="10dp"
                     android:text="A"
                     android:textColor="@android:color/black"
                     android:textSize="11sp" />
@@ -116,7 +118,7 @@
                         android:layout_height="match_parent"
                         android:background="@android:color/white"
                         android:gravity="center_vertical"
-                        android:paddingLeft="10dip"
+                        android:layout_marginLeft="10dip"
                         android:text="阿当"
                         android:textColor="@android:color/black"
                         android:textSize="13sp" />
@@ -127,7 +129,8 @@
                         android:layout_marginLeft="20dip"
                         android:background="@android:color/white"
                         android:gravity="center_vertical"
-                        android:paddingLeft="10dip"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
                         android:text="沪ASH001"
                         android:textColor="@android:color/black"
                         android:textSize="13sp" />
@@ -139,6 +142,7 @@
                         android:background="@android:color/white"
                         android:gravity="center_vertical"
                         android:paddingLeft="10dip"
+                        android:paddingRight="10dp"
                         android:text="137898374758"
                         android:textColor="@android:color/black"
                         android:textSize="13sp" />
@@ -160,7 +164,7 @@
                         android:layout_height="match_parent"
                         android:background="@android:color/white"
                         android:gravity="center_vertical"
-                        android:paddingLeft="10dip"
+                        android:layout_marginLeft="10dip"
                         android:text="阿当"
                         android:textColor="@android:color/black"
                         android:textSize="13sp" />
@@ -172,6 +176,7 @@
                         android:background="@android:color/white"
                         android:gravity="center_vertical"
                         android:paddingLeft="10dip"
+                        android:paddingRight="10dp"
                         android:text="沪ASH001"
                         android:textColor="@android:color/black"
                         android:textSize="13sp" />
@@ -183,6 +188,7 @@
                         android:background="@android:color/white"
                         android:gravity="center_vertical"
                         android:paddingLeft="10dip"
+                        android:paddingRight="10dp"
                         android:text="137898374758"
                         android:textColor="@android:color/black"
                         android:textSize="13sp" />
@@ -199,6 +205,7 @@
                     android:background="#f3f3f3"
                     android:gravity="center_vertical"
                     android:paddingLeft="10dip"
+                    android:paddingRight="10dp"
                     android:text="B"
                     android:textColor="@android:color/black"
                     android:textSize="11sp" />
@@ -213,7 +220,7 @@
                         android:layout_height="match_parent"
                         android:background="@android:color/white"
                         android:gravity="center_vertical"
-                        android:paddingLeft="10dip"
+                        android:layout_marginLeft="10dip"
                         android:text="阿当"
                         android:textColor="@android:color/black"
                         android:textSize="13sp" />
@@ -224,7 +231,8 @@
                         android:layout_marginLeft="20dip"
                         android:background="@android:color/white"
                         android:gravity="center_vertical"
-                        android:paddingLeft="10dip"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
                         android:text="沪ASH001"
                         android:textColor="@android:color/black"
                         android:textSize="13sp" />
@@ -235,7 +243,8 @@
                         android:layout_marginLeft="20dip"
                         android:background="@android:color/white"
                         android:gravity="center_vertical"
-                        android:paddingLeft="10dip"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
                         android:text="137898374758"
                         android:textColor="@android:color/black"
                         android:textSize="13sp" />
@@ -257,7 +266,7 @@
                         android:layout_height="match_parent"
                         android:background="@android:color/white"
                         android:gravity="center_vertical"
-                        android:paddingLeft="10dip"
+                        android:layout_marginLeft="10dip"
                         android:text="阿当"
                         android:textColor="@android:color/black"
                         android:textSize="13sp" />
@@ -269,6 +278,7 @@
                         android:background="@android:color/white"
                         android:gravity="center_vertical"
                         android:paddingLeft="10dip"
+                        android:paddingRight="10dp"
                         android:text="沪ASH001"
                         android:textColor="@android:color/black"
                         android:textSize="13sp" />
@@ -280,6 +290,7 @@
                         android:background="@android:color/white"
                         android:gravity="center_vertical"
                         android:paddingLeft="10dip"
+                        android:paddingRight="10dp"
                         android:text="137898374758"
                         android:textColor="@android:color/black"
                         android:textSize="13sp" />
@@ -296,6 +307,7 @@
                     android:background="#f3f3f3"
                     android:gravity="center_vertical"
                     android:paddingLeft="10dip"
+                    android:paddingRight="10dp"
                     android:text="C"
                     android:textColor="@android:color/black"
                     android:textSize="11sp" />
@@ -311,6 +323,7 @@
                         android:background="@android:color/white"
                         android:gravity="center_vertical"
                         android:paddingLeft="10dip"
+                        android:paddingRight="10dp"
                         android:text="阿当"
                         android:textColor="@android:color/black"
                         android:textSize="13sp" />
@@ -322,6 +335,7 @@
                         android:background="@android:color/white"
                         android:gravity="center_vertical"
                         android:paddingLeft="10dip"
+                        android:paddingRight="10dp"
                         android:text="沪ASH001"
                         android:textColor="@android:color/black"
                         android:textSize="13sp" />
@@ -333,6 +347,7 @@
                         android:background="@android:color/white"
                         android:gravity="center_vertical"
                         android:paddingLeft="10dip"
+                        android:paddingRight="10dp"
                         android:text="137898374758"
                         android:textColor="@android:color/black"
                         android:textSize="13sp" />
@@ -355,6 +370,7 @@
                         android:background="@android:color/white"
                         android:gravity="center_vertical"
                         android:paddingLeft="10dip"
+                        android:paddingRight="10dp"
                         android:text="阿当"
                         android:textColor="@android:color/black"
                         android:textSize="13sp" />
@@ -366,6 +382,7 @@
                         android:background="@android:color/white"
                         android:gravity="center_vertical"
                         android:paddingLeft="10dip"
+                        android:paddingRight="10dp"
                         android:text="沪ASH001"
                         android:textColor="@android:color/black"
                         android:textSize="13sp" />
@@ -377,6 +394,7 @@
                         android:background="@android:color/white"
                         android:gravity="center_vertical"
                         android:paddingLeft="10dip"
+                        android:paddingRight="10dp"
                         android:text="137898374758"
                         android:textColor="@android:color/black"
                         android:textSize="13sp" />
@@ -594,6 +612,7 @@
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingLeft="10dip"
+        android:paddingRight="10dp"
         android:visibility="gone" >
 
         <LinearLayout

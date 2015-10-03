@@ -7,7 +7,10 @@ import android.content.Context;
 import com.android.volley.Response.ErrorListener;
 import com.android.volley.Response.Listener;
 import com.like.likeutils.network.DataFetcherBase;
+import com.like.likeutils.network.GsonUtil;
 import com.like.likeutils.network.NetParamGenerator;
+import com.taoqibao.entity.Stuff;
+import com.taoqibao.entity.StuffForAdd;
 
 public class DataFetcher extends DataFetcherBase {
 	
@@ -73,7 +76,7 @@ public class DataFetcher extends DataFetcherBase {
 		fetchData(APIS.ADD_INSURANCE, params, listener, errorListener);
 	}
 	
-	public void fetchGetCustomerByKey(String idOwnOrg, String keyWord, Listener<String> listener, ErrorListener errorListener) {
+	public void fetchCustomerByKey(String idOwnOrg, String keyWord, Listener<String> listener, ErrorListener errorListener) {
 		Map<String, String> params = NetParamGenerator.getMapParams(APIS.GET_CUSTOMER_BY_KEY, idOwnOrg, keyWord);
 		fetchData(APIS.GET_CUSTOMER_BY_KEY, params, listener, errorListener);
 	}
@@ -86,8 +89,47 @@ public class DataFetcher extends DataFetcherBase {
 		fetchData(APIS.ADD_CUSTOMER, params, listener, errorListener);
 	}
 	
-	public void fetchGetBrandList(Listener<String> listener, ErrorListener errorListener) {
+	public void fetchBrandList(Listener<String> listener, ErrorListener errorListener) {
 		fetchData(APIS.GET_BRAND_LIST, listener, errorListener);
+	}
+	
+	public void fetchBrandByKey(String keyWord, Listener<String> listener, ErrorListener errorListener) {
+		Map<String, String> params = NetParamGenerator.getMapParams(APIS.GET_BRAND_BY_KEY, keyWord);
+		fetchData(APIS.GET_BRAND_BY_KEY, params, listener, errorListener);
+	}
+	
+	public void fetchStuffCategories(Listener<String> listener, ErrorListener errorListener) {
+		fetchData(APIS.GET_STUFF_CAT, listener, errorListener);
+	}
+	
+	public void fetchStuff(String idOwnOrg, String param, Listener<String> listener, ErrorListener errorListener) {
+		Map<String, String> params = NetParamGenerator.getMapParams(APIS.QUERY_STUFF, idOwnOrg, param);
+		fetchData(APIS.QUERY_STUFF, params, listener, errorListener);
+	}
+	
+	public void fetchAddStuff(String orgId, StuffForAdd stuff, Listener<String> listener, ErrorListener errorListener) {
+		fetchData(APIS.ADD_STUFF, stuff, listener, errorListener);
+	}
+	
+	public void fetchOweAccountCustomerList(String idOwnOrg, Listener<String> listener, ErrorListener errorListener) {
+		fetchData(APIS.GET_OWE_AMOUNT_CUSTOMER_LIST, listener, errorListener, idOwnOrg);
+	}
+	
+	public void fetchGatherInfo(String idOwnOrg, String idSourceBill, String businessType, Listener<String> listener, ErrorListener errorListener) {
+		Map<String, String> params = NetParamGenerator.getMapParams(APIS.GET_GATHER_INFO, idOwnOrg, idSourceBill, businessType);
+		fetchData(APIS.GET_GATHER_INFO, params, listener, errorListener);
+	}
+	
+	public void fetchGathering(String idOwnOrg, String businessType, Listener<String> listener, ErrorListener errorListener) {
+		fetchData(APIS.GATHERING, listener, errorListener, idOwnOrg, businessType);
+	}
+	
+	public void fetchCustomerGathering(String idOwnOrg, String idCustomer, Listener<String> listener, ErrorListener errorListener) {
+		fetchData(APIS.CUSTOMER_GATHERING, listener, errorListener, idOwnOrg, idCustomer);
+	}
+	
+	public void fetchCheckCategory(Listener<String> listener, ErrorListener errorListener) {
+		fetchData(APIS.GET_CHECK_CATEGORY, listener, errorListener);
 	}
 
 }

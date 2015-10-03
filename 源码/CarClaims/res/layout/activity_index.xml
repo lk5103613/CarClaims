@@ -47,7 +47,7 @@
         android:singleLine="true"
         android:ellipsize="end"
         android:text="欢迎您，上海某某汽车维修公司"
-        android:paddingLeft="20dp"
+        android:layout_marginLeft="20dp"
         />
     </LinearLayout>
     <ImageView
@@ -281,7 +281,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="18dp"
                         android:text="呼叫淘气包"
-                        android:paddingLeft="15dp"
+                        android:layout_marginLeft="15dp"
                         android:textColor="#ffffff"
                         />
                    </LinearLayout>

@@ -12,6 +12,8 @@ import com.taoqibao.entity.CarBrand;
 import com.taoqibao.entity.CarEngine;
 import com.taoqibao.entity.CarLine;
 import com.taoqibao.entity.CarMain;
+import com.taoqibao.entity.Stuff;
+import com.taoqibao.entity.StuffCategories;
 
 public class GsonConverter {
 	
@@ -48,6 +50,15 @@ public class GsonConverter {
 	
 	public static Map<String, Brand> toBrandList(String response) {
 		Type type = new TypeToken<Map<String, Brand>>(){}.getType();
+		return GsonUtil.gson.fromJson(response, type);
+	}
+	
+	public static StuffCategories toStuffCategories(String response) {
+		return GsonUtil.gson.fromJson(response, StuffCategories.class);
+	}
+	
+	public static List<Stuff> toStuffList(String response) {
+		Type type = new TypeToken<List<Stuff>>(){}.getType();
 		return GsonUtil.gson.fromJson(response, type);
 	}
 

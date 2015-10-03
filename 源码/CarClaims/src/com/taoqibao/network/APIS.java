@@ -29,6 +29,19 @@ public class APIS {
 	public static final String ADD_CUSTOMER = BASE_URL2 + "/tqb1.0/mobileCustomerCar/addCustomerCar.action?name=%1&cellPhone=%2&idOwnOrg=%3&carNo=%4&carPrefix=%5&"
 			+ "sex=%6&vin=%7&brandId=%8&factoryId=%9&lineId=%10&engineId=%11&mainId=%12&mengineNumber=%13&factoryCode=%14&idInsuranceCompany=%15&insurancepolicyNo=%16//添加客户";
 	
-	public static final String GET_BRAND_LIST = BASE_URL2 + "/tqb1.0/mobileCenterConstant/getBrandList.action";
+	public static final String GET_BRAND_LIST = BASE_URL2 + "/tqb1.0/mobileCenterConstant/getBrandList.action//获取所有材料品牌列表";
+	public static final String GET_BRAND_BY_KEY = BASE_URL2 + "/tqb1.0/mobileCenterConstant/getBrandsByKeyWord.action?keyWord=%1//根据关键字查询材料品牌";
+	
+	public static final String GET_STUFF_CAT = BASE_URL2 + "/tqb1.0/mobileCenterConstant/getStuffCategories.action//获得材料种类";
+	public static final String QUERY_STUFF = BASE_URL2 + "/tqb1.0/mobileStuff/queryStuffInfo.action?idOwnOrg=%1&param=%2//查询材料";
+	public static final String ADD_STUFF = BASE_URL2 + "/tqb1.0/mobileStuff/addStuff.action?orgnaizationId=%1&tmPartInfo=%2";
+	
+	public static final String GET_OWE_AMOUNT_CUSTOMER_LIST = BASE_URL2 + "/tqb1.0/mobilePayment/getOweAmountCustomerList.action?idOwnOrg=%1";
+	public static final String GET_GATHER_INFO = BASE_URL2 + "/tqb1.0/mobilePayment/getGatheringInfo.action?idOwnOrg=%1&idSourceBill=%2&businessType=%3";
+	public static final String GATHERING = BASE_URL2 + "/tqb1.0/mobilePayment/gathering.action?idOwnOrg=%1&businessType=%2";
+	public static final String CUSTOMER_GATHERING = BASE_URL2 + "/tqb1.0/mobilePayment/customerGathering.action?idOwnOrg=%1&idCustomer=%2";
+	
+	public static final String GET_CHECK_CATEGORY = BASE_URL2 + "/tqb1.0/mobileCarCheck/getCheckCategory.action";
+	
 
 }
