@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f1f2f4"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/login_title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dip" >
+        
+        
+        
+        
+        
+        <LinearLayout
+            android:id="@+id/cell_phone_box0"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dip"
+            android:background="@drawable/login_frame"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="25.5dip"
+                android:layout_height="24dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/u"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/codeTv"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入Code"
+                android:text="0002"
+                android:paddingLeft="13dip"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="15sp" />
+        </LinearLayout>
+        
+        
+
+        <LinearLayout
+            android:id="@+id/cell_phone_box"
+            android:layout_below="@id/cell_phone_box0"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dip"
+            android:background="@drawable/login_frame"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="120dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="25.5dip"
+                android:layout_height="24dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/u"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/mpTv"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                 
+                android:text="shenminda"
+                android:paddingLeft="13dip"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hx"
+            android:layout_width="fill_parent"
+            android:layout_height="0.6dip"
+            android:layout_below="@id/cell_phone_box"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="36dip"
+            android:layout_marginTop="0dip"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/password_box"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_below="@id/hx"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dip"
+            android:layout_marginTop="0dip"
+            android:background="@drawable/login_frame"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="25.5dip"
+                android:layout_height="24dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/p"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/pwdTv"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="111111"
+                android:inputType="textPassword"
+                android:paddingLeft="13dip"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/loginLL"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_box"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/loginBtn"
+                android:layout_width="300dip"
+                android:layout_height="38dip"
+                android:layout_gravity="center_vertical|center"
+                android:layout_marginTop="20dip"
+                android:background="#fc6969"
+                android:gravity="center_vertical|center"
+                android:text="登 录"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/otherLL"
+            android:layout_width="300dip"
+            android:layout_height="33.5dip"
+            android:layout_below="@id/loginLL"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="忘记了密码?"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="4" />
+
+            <TextView
+                android:id="@+id/regTv"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dip"
+                android:layout_weight="3"
+                android:text="    注册新用户"
+                android:textColor="@color/red"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+       
+    </RelativeLayout>
+
+    <!-- <include layout="@layout/common_listview" /> -->
+
+</RelativeLayout>

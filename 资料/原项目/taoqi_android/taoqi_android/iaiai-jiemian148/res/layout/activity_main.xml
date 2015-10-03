@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f3f3f3"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout android:background="#abd916" android:layout_width="match_parent" android:layout_height="45dip">
+        <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:textColor="@android:color/white" android:textSize="18sp" android:text="设置车型"/>
+        
+        <LinearLayout android:layout_width="40dip" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center">
+            <ImageView android:layout_width="8dip" android:layout_height="15dip" android:scaleType="fitXY" android:src="@drawable/back"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+		<LinearLayout android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+	    	<TextView android:background="#f3f3f3" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="20dip" android:textColor="@android:color/black" android:textSize="11sp" android:text="A"/>
+	    	<LinearLayout android:gravity="center_vertical" android:paddingTop="5dip" android:paddingBottom="5dip" android:paddingLeft="10dip" android:paddingRight="10dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+	        	<ImageView android:layout_width="35dip" android:layout_height="35dip" android:scaleType="fitXY" android:src="@drawable/aodi"/>
+	        	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_weight="1" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="奥迪" android:layout_marginLeft="20dip"/>
+	        	<ImageView android:layout_width="5dip" android:layout_height="10dip" android:scaleType="fitXY" android:src="@drawable/you"/>
+	    	</LinearLayout>
+	        <View android:layout_width="match_parent" android:layout_height="0.5dip" android:background="#d0d0d0"/>
+	        
+	        <TextView android:background="#f3f3f3" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="20dip" android:textColor="@android:color/black" android:textSize="11sp" android:text="B"/>
+	    	<LinearLayout android:gravity="center_vertical" android:paddingTop="5dip" android:paddingBottom="5dip" android:paddingLeft="10dip" android:paddingRight="10dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+	        	<ImageView android:layout_width="35dip" android:layout_height="35dip" android:scaleType="fitXY" android:src="@drawable/biaozhi"/>
+	        	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_weight="1" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="标志" android:layout_marginLeft="20dip"/>
+	        	<ImageView android:layout_width="5dip" android:layout_height="10dip" android:scaleType="fitXY" android:src="@drawable/you"/>
+	    	</LinearLayout>
+	        <View android:layout_marginLeft="10dip" android:layout_width="match_parent" android:layout_height="0.5dip" android:background="#d0d0d0"/>
+	        <LinearLayout android:gravity="center_vertical" android:paddingTop="5dip" android:paddingBottom="5dip" android:paddingLeft="10dip" android:paddingRight="10dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+	        	<ImageView android:layout_width="35dip" android:layout_height="35dip" android:scaleType="fitXY" android:src="@drawable/bentian"/>
+	        	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_weight="1" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="本田" android:layout_marginLeft="20dip"/>
+	        	<ImageView android:layout_width="5dip" android:layout_height="10dip" android:scaleType="fitXY" android:src="@drawable/you"/>
+	    	</LinearLayout>
+	    	<View android:layout_marginLeft="10dip" android:layout_width="match_parent" android:layout_height="0.5dip" android:background="#d0d0d0"/>
+	        <LinearLayout android:gravity="center_vertical" android:paddingTop="5dip" android:paddingBottom="5dip" android:paddingLeft="10dip" android:paddingRight="10dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+	        	<ImageView android:layout_width="35dip" android:layout_height="35dip" android:scaleType="fitXY" android:src="@drawable/bieke"/>
+	        	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_weight="1" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="别克" android:layout_marginLeft="20dip"/>
+	        	<ImageView android:layout_width="5dip" android:layout_height="10dip" android:scaleType="fitXY" android:src="@drawable/you"/>
+	    	</LinearLayout>
+	    	<View android:layout_marginLeft="10dip" android:layout_width="match_parent" android:layout_height="0.5dip" android:background="#d0d0d0"/>
+	        <LinearLayout android:gravity="center_vertical" android:paddingTop="5dip" android:paddingBottom="5dip" android:paddingLeft="10dip" android:paddingRight="10dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+	        	<ImageView android:layout_width="35dip" android:layout_height="35dip" android:scaleType="fitXY" android:src="@drawable/baoma"/>
+	        	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_weight="1" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="宝马" android:layout_marginLeft="20dip"/>
+	        	<ImageView android:layout_width="5dip" android:layout_height="10dip" android:scaleType="fitXY" android:src="@drawable/you"/>
+	    	</LinearLayout>
+	    	<View android:layout_marginLeft="10dip" android:layout_width="match_parent" android:layout_height="0.5dip" android:background="#d0d0d0"/>
+	        <LinearLayout android:gravity="center_vertical" android:paddingTop="5dip" android:paddingBottom="5dip" android:paddingLeft="10dip" android:paddingRight="10dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+	        	<ImageView android:layout_width="35dip" android:layout_height="35dip" android:scaleType="fitXY" android:src="@drawable/biyadi"/>
+	        	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_weight="1" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="比亚迪" android:layout_marginLeft="20dip"/>
+	        	<ImageView android:layout_width="5dip" android:layout_height="10dip" android:scaleType="fitXY" android:src="@drawable/you"/>
+	    	</LinearLayout>
+	    	<View android:layout_marginLeft="10dip" android:layout_width="match_parent" android:layout_height="0.5dip" android:background="#d0d0d0"/>
+	        <LinearLayout android:gravity="center_vertical" android:paddingTop="5dip" android:paddingBottom="5dip" android:paddingLeft="10dip" android:paddingRight="10dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+	        	<ImageView android:layout_width="35dip" android:layout_height="35dip" android:scaleType="fitXY" android:src="@drawable/benchi"/>
+	        	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_weight="1" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="奔驰" android:layout_marginLeft="20dip"/>
+	        	<ImageView android:layout_width="5dip" android:layout_height="10dip" android:scaleType="fitXY" android:src="@drawable/you"/>
+	    	</LinearLayout>
+	        <View android:layout_width="match_parent" android:layout_height="0.5dip" android:background="#d0d0d0"/>
+	        
+	        <TextView android:background="#f3f3f3" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="20dip" android:textColor="@android:color/black" android:textSize="11sp" android:text="D"/>
+	    	<LinearLayout android:gravity="center_vertical" android:paddingTop="5dip" android:paddingBottom="5dip" android:paddingLeft="10dip" android:paddingRight="10dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+	        	<ImageView android:layout_width="35dip" android:layout_height="35dip" android:scaleType="fitXY" android:src="@drawable/dazhongx"/>
+	        	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_weight="1" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="大众" android:layout_marginLeft="20dip"/>
+	        	<ImageView android:layout_width="5dip" android:layout_height="10dip" android:scaleType="fitXY" android:src="@drawable/you"/>
+	    	</LinearLayout>
+	        <View android:layout_width="match_parent" android:layout_height="0.5dip" android:background="#d0d0d0"/>
+	        
+		</LinearLayout>
+    </ScrollView>
+    <View android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:background="#c0c0c0"/>
+    <LinearLayout android:visibility="gone" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingLeft="10dip" android:orientation="horizontal" android:gravity="center_vertical">
+        <LinearLayout android:layout_marginTop="10dip" android:layout_marginBottom="10dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@android:color/black" android:textSize="12sp" android:text="工时费 ¥ 40.00"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@android:color/black" android:textSize="12sp" android:text="材料费 ¥ 40.00"/>
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#afda19" android:textSize="15sp" android:text="总计 ¥ 100.00" android:paddingLeft="15dip" android:paddingRight="15dip"/>
+        <TextView android:layout_width="80dip" android:layout_height="fill_parent" android:textColor="@android:color/white" android:textSize="15sp" android:text="保存" android:gravity="center" android:background="#abd916"/>
+    </LinearLayout>
+</LinearLayout>

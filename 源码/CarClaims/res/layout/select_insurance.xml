@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ABD732"
+        >
+
+        <ImageView
+
+            android:id="@+id/activity_3_btn_1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/activity_2_3"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择保险公司"
+            android:textSize="20dp"
+            android:textColor="#ffffff"/>
+        <ImageView
+            android:id="@+id/activity_3_btn_2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/activity_3_1"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:background="@drawable/activity_3_shape"
+           >
+    
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                />
+           <ImageView
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:src="@drawable/activity_3_2"
+               android:layout_gravity="center_vertical"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1000"
+                android:textSize="16dp"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:hint="请输入车牌号／手机号／客户姓名查询"
+                android:background="@null"/>
+           </LinearLayout>
+
+
+
+        </FrameLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#CBCCCD"
+            />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#CBCCCD"
+        />
+    
+    <ListView
+
+        android:id="@+id/lv_activity3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1000"
+        android:dividerHeight="0px"
+        android:divider="@null"></ListView>
+
+
+
+</LinearLayout>

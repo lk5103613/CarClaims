@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/tab1"
+           
+            android:clickable="true"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/activity_1_10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#b3d826"
+                android:textSize="10sp"
+                android:text="首页"
+                android:layout_marginTop="2dip"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tab2"
+             
+            android:clickable="true"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="23dip"
+                android:layout_height="20dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/activity_1_11"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#9d9ea0"
+                android:textSize="10sp"
+                android:text="移动接车"
+                android:layout_marginTop="2dip"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tab3"
+             
+            android:clickable="true"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="23dip"
+                android:layout_height="20dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/activity_1_12"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#9d9ea0"
+                android:textSize="10sp"
+                android:text="工作看板"
+                android:layout_marginTop="2dip"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tab4"
+             
+            android:clickable="true"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/activity_1_13"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#9d9ea0"
+                android:textSize="10sp"
+                android:text="报表"
+                android:layout_marginTop="2dip"/>
+        </LinearLayout>
+      
+    </LinearLayout>
+
+</LinearLayout>

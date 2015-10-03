@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:background="#ffff"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/sp"
+            android:gravity="left|center"
+            android:hint="2015/05/08  11:30  公车"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/compensatiopn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffff"
+            android:background="@drawable/save"
+            android:text="理赔"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

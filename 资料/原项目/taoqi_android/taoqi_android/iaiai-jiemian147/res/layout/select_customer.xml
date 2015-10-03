@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f3f3f3"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout android:background="#abd916" android:layout_width="match_parent" android:layout_height="45dip">
+        <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:textColor="@android:color/white" android:textSize="18sp" android:text="选客户"/>
+        
+        <LinearLayout android:layout_width="40dip" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center">
+            <ImageView android:layout_width="8dip" android:layout_height="15dip" android:scaleType="fitXY" android:src="@drawable/back"/>
+        </LinearLayout>
+        
+        <LinearLayout android:layout_alignParentRight="true" android:layout_width="40dip" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center">
+            <ImageView android:layout_width="15dip" android:layout_height="15dip" android:scaleType="fitXY" android:src="@drawable/jia"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:layout_marginTop="5dip" android:layout_marginBottom="5dip" android:background="@drawable/search" android:layout_marginLeft="20dip" android:layout_marginRight="20dip" android:paddingLeft="10dip" android:paddingRight="10dip" android:layout_width="match_parent" android:layout_height="25dip" android:orientation="horizontal" android:gravity="center_vertical">
+		<ImageView android:layout_width="15dip" android:layout_height="15dip" android:scaleType="fitXY" android:src="@drawable/sous"/>
+		<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#cccccc" android:textSize="11sp" android:paddingLeft="10dip" android:text="输入服务项目名称/首字母模糊查询"/>
+	</LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="0.5dip" android:background="#b0b0b0"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+	        <LinearLayout android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+	            <TextView android:background="#f3f3f3" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="20dip" android:textColor="@android:color/black" android:textSize="11sp" android:text="A"/>
+	            <LinearLayout android:layout_width="fill_parent" android:layout_height="40dip" android:orientation="horizontal">
+	            	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="阿当"/>
+	            	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="沪ASH001" android:layout_marginLeft="20dip"/>
+	            	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="137898374758" android:layout_marginLeft="20dip"/>
+	            </LinearLayout>
+	            <View android:layout_marginLeft="10dip" android:layout_width="match_parent" android:layout_height="0.5dip" android:background="#d0d0d0"/>
+	            <LinearLayout android:layout_width="fill_parent" android:layout_height="40dip" android:orientation="horizontal">
+	            	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="阿当"/>
+	            	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="沪ASH001" android:layout_marginLeft="20dip"/>
+	            	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="137898374758" android:layout_marginLeft="20dip"/>
+	            </LinearLayout>
+	            <View android:layout_width="match_parent" android:layout_height="0.5dip" android:background="#d0d0d0"/>
+	            
+	            <TextView android:background="#f3f3f3" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="20dip" android:textColor="@android:color/black" android:textSize="11sp" android:text="B"/>
+	            <LinearLayout android:layout_width="fill_parent" android:layout_height="40dip" android:orientation="horizontal">
+	            	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="阿当"/>
+	            	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="沪ASH001" android:layout_marginLeft="20dip"/>
+	            	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="137898374758" android:layout_marginLeft="20dip"/>
+	            </LinearLayout>
+	            <View android:layout_marginLeft="10dip" android:layout_width="match_parent" android:layout_height="0.5dip" android:background="#d0d0d0"/>
+	            <LinearLayout android:layout_width="fill_parent" android:layout_height="40dip" android:orientation="horizontal">
+	            	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="阿当"/>
+	            	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="沪ASH001" android:layout_marginLeft="20dip"/>
+	            	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="137898374758" android:layout_marginLeft="20dip"/>
+	            </LinearLayout>
+	            <View android:layout_width="match_parent" android:layout_height="0.5dip" android:background="#d0d0d0"/>
+	            
+	            <TextView android:background="#f3f3f3" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="20dip" android:textColor="@android:color/black" android:textSize="11sp" android:text="C"/>
+	            <LinearLayout android:layout_width="fill_parent" android:layout_height="40dip" android:orientation="horizontal">
+	            	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="阿当"/>
+	            	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="沪ASH001" android:layout_marginLeft="20dip"/>
+	            	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="137898374758" android:layout_marginLeft="20dip"/>
+	            </LinearLayout>
+	            <View android:layout_marginLeft="10dip" android:layout_width="match_parent" android:layout_height="0.5dip" android:background="#d0d0d0"/>
+	            <LinearLayout android:layout_width="fill_parent" android:layout_height="40dip" android:orientation="horizontal">
+	            	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="阿当"/>
+	            	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="沪ASH001" android:layout_marginLeft="20dip"/>
+	            	<TextView android:background="@android:color/white" android:paddingLeft="10dip" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:textColor="@android:color/black" android:textSize="13sp" android:text="137898374758" android:layout_marginLeft="20dip"/>
+	            </LinearLayout>
+	            <View android:layout_width="match_parent" android:layout_height="0.5dip" android:background="#d0d0d0"/>
+	            
+	        </LinearLayout>
+	        <LinearLayout android:background="#f3f3f3" android:layout_width="15dip" android:layout_height="match_parent" android:orientation="vertical" android:layout_alignParentRight="true" android:gravity="center">
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="A"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="B"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="C"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="D"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="E"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="F"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="G"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="H"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="I"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="J"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="K"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="L"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="M"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="N"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="O"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="P"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="Q"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="R"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="S"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="T"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="U"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="V"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="W"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="X"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="Y"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#abd916" android:textSize="11sp" android:text="Z"/>
+	        </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <View android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:background="#c0c0c0"/>
+    <LinearLayout android:visibility="gone" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingLeft="10dip" android:orientation="horizontal" android:gravity="center_vertical">
+        <LinearLayout android:layout_marginTop="10dip" android:layout_marginBottom="10dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@android:color/black" android:textSize="12sp" android:text="工时费 ¥ 40.00"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@android:color/black" android:textSize="12sp" android:text="材料费 ¥ 40.00"/>
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#afda19" android:textSize="15sp" android:text="总计 ¥ 100.00" android:paddingLeft="15dip" android:paddingRight="15dip"/>
+        <TextView android:layout_width="80dip" android:layout_height="fill_parent" android:textColor="@android:color/white" android:textSize="15sp" android:text="保存" android:gravity="center" android:background="#abd916"/>
+    </LinearLayout>
+</LinearLayout>

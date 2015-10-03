@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f3f3f3"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout android:background="#abd916" android:layout_width="match_parent" android:layout_height="45dip">
+        <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:textColor="@android:color/white" android:textSize="18sp" android:text="服务项目"/>
+        
+        <LinearLayout android:layout_width="40dip" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center">
+            <ImageView android:layout_width="8dip" android:layout_height="15dip" android:scaleType="fitXY" android:src="@drawable/back"/>
+        </LinearLayout>
+        
+        <LinearLayout android:layout_alignParentRight="true" android:layout_width="50dip" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@android:color/white" android:textSize="13sp" android:text="下一步"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+		<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+	    	<LinearLayout android:layout_width="match_parent" android:layout_height="45dip" android:orientation="horizontal" android:gravity="center_vertical" android:paddingLeft="10dip" android:paddingRight="10dip">
+	    	    <ImageView android:layout_width="20dip" android:layout_height="15dip" android:scaleType="fitXY" android:src="@drawable/car"/>
+	    	    <TextView android:paddingLeft="10dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@android:color/black" android:textSize="12sp" android:text="阿当  沪ASH001  13888888888  大众  途观  1.8T"/>
+	    	</LinearLayout>
+	    	<View android:layout_width="match_parent" android:layout_height="0.5dip" android:background="#d1d1d1"/>
+	    	<View android:layout_width="match_parent" android:layout_height="0.5dip" android:background="#d1d1d1" android:layout_marginTop="10dip"/>
+	    	<LinearLayout android:layout_width="match_parent" android:layout_height="45dip" android:orientation="horizontal" android:background="@android:color/white">
+	    	    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+	    	        <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:textSize="15sp" android:text="维修" android:textColor="@android:color/black"/>
+	    	    </RelativeLayout>
+	    	    <View android:layout_width="0.5dip" android:layout_height="match_parent" android:background="#d1d1d1"/>
+	    	    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+	    	        <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:textSize="15sp" android:text="维修历史" android:textColor="@android:color/black"/>
+	    	    </RelativeLayout>
+	    	    <View android:layout_width="0.5dip" android:layout_height="match_parent" android:background="#d1d1d1"/>
+	    	    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+	    	        <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:textSize="15sp" android:text="欠款历史" android:textColor="#acda15"/>
+	    	        <TextView android:layout_alignParentRight="true" android:layout_marginTop="6dip" android:layout_marginRight="13dip" android:layout_width="15dip" android:layout_height="15dip" android:gravity="center" android:textSize="10sp" android:text="4" android:textColor="@android:color/white" android:background="@drawable/yuan"/>
+	    	        <View android:layout_width="match_parent" android:layout_height="3dip" android:background="#acda15" android:layout_alignParentBottom="true"/>
+	    	    </RelativeLayout>
+	    	</LinearLayout>
+	    	<View android:layout_width="match_parent" android:layout_height="0.5dip" android:background="#d1d1d1"/>
+	    	
+	    	<View android:layout_width="match_parent" android:layout_height="0.5dip" android:background="#d1d1d1" android:layout_marginTop="10dip"/>
+	    	<LinearLayout android:layout_width="match_parent" android:layout_height="45dip" android:orientation="horizontal" android:background="@android:color/white" android:gravity="center_vertical" android:paddingLeft="10dip" android:paddingRight="10dip">
+	    	    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@android:color/black" android:textSize="15sp" android:text="总计欠款"/>
+	    	    <TextView android:layout_width="match_parent" android:layout_weight="1" android:gravity="right" android:layout_height="wrap_content" android:textColor="#acda15" android:paddingRight="10dip" android:textSize="15sp" android:text="¥200"/>
+	    	    <ImageView android:layout_width="10dip" android:layout_height="5dip" android:scaleType="fitXY" android:src="@drawable/xj"/>
+	    	</LinearLayout>
+	    	<View android:layout_width="match_parent" android:layout_height="0.5dip" android:background="#d1d1d1"/>
+	    	
+	    	<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_margin="10dip" android:background="@drawable/biankuang_01">
+	    	    <LinearLayout android:layout_width="match_parent" android:layout_height="40dip" android:gravity="center" android:orientation="horizontal">
+	    	        <TextView android:layout_weight="1" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:textColor="@android:color/black" android:textSize="13sp" android:text="2015/07/09"/>
+	    	        <TextView android:layout_weight="1" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:textColor="@android:color/black" android:textSize="13sp" android:text="GD20150628001"/>
+	    	        <TextView android:layout_weight="1" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:textColor="#acda15" android:textSize="13sp" android:text="¥200"/>
+	    	    </LinearLayout>
+	    	    <View android:layout_width="match_parent" android:layout_height="0.5dip" android:background="#bfbfbf"/>
+	    	    <LinearLayout android:layout_width="match_parent" android:layout_height="40dip" android:gravity="center" android:orientation="horizontal">
+	    	        <TextView android:layout_weight="1" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:textColor="@android:color/black" android:textSize="13sp" android:text="2015/07/09"/>
+	    	        <TextView android:layout_weight="1" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:textColor="@android:color/black" android:textSize="13sp" android:text="GD20150628001"/>
+	    	        <TextView android:layout_weight="1" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:textColor="#acda15" android:textSize="13sp" android:text="¥200"/>
+	    	    </LinearLayout>
+	    	</LinearLayout>
+	    	
+	    	<TextView android:background="#abd916" android:layout_width="match_parent" android:layout_height="40dip" android:gravity="center" android:textColor="@android:color/white" android:textSize="15sp" android:text="结算" android:layout_margin="10dip"/>
+		</LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>

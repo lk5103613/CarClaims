@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="30dp">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:paddingTop="10dp"
+       android:paddingBottom="10dp">
+       <ImageView
+           android:id="@+id/iv_activity_3_1"
+           android:layout_width="20dp"
+           android:layout_height="20dp"
+           android:src="@drawable/activity_3_3"
+           android:layout_centerVertical="true"
+           />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/iv_activity_3_1"
+    android:textSize="18dp"
+    android:text="中国太平洋保险公司"
+    android:layout_centerVertical="true"
+    android:padding="15dp"
+
+    />
+
+       <ImageView
+           android:layout_width="20dp"
+           android:layout_height="20dp"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:src="@drawable/activity_3_4"
+           android:layout_marginRight="10dp"/>
+
+       </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#C8C9CA"/>
+</LinearLayout>

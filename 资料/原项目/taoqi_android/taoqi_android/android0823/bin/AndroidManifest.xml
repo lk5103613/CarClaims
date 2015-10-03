@@ -1,0 +1,601 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.taoqibao.ui"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+
+   
+    
+    
+    
+
+    <application
+        android:name="com.taoqibao.ui.TaoQiBaoApplication"
+        android:icon="@drawable/logo120"
+        android:label="淘汽包"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.taoqibao.ui.LoginUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.taoqibao.ui.index.LiPeiUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.taoqibao.ui.lipei.SelectLiPeiCustomerUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <activity
+            android:name="com.taoqibao.ui.lipei.Insurance4CustomerUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        
+        <activity
+            android:name="com.taoqibao.ui.lipei.SelectInsuranceUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        
+        
+        
+        
+        
+        
+           <activity
+            android:name="com.taoqibao.ui.repair.SelectRepairCustomerUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        
+           
+           
+            <activity
+            android:name="com.taoqibao.ui.repair.RepairUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+           
+           <activity
+            android:name="com.taoqibao.ui.repair.RepairTab0"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+           
+           
+           
+           
+           
+           
+           
+           
+        
+        
+        <activity
+            android:name="com.taoqibao.ui.repair.GongDanUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <activity
+            android:name="com.taoqibao.ui.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        
+        
+        
+            <activity
+            android:name="com.mondetao.ui.order.PublishCommentUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan"/>
+        
+             
+       
+        
+          <activity
+            android:name="com.mondetao.ui.goods.DaPeiJianJiaUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        
+        
+        
+        
+        
+        
+        <activity
+            android:name="com.mondetao.ui.category.Cat2TeChanUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.mondetao.ui.index.JiaJUCYModule"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.mondetao.ui.index.MeiShiModule"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.mondetao.ui.i.ShiWuOrderListUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.mondetao.ui.index.TrouseModule"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.mondetao.ui.cart.CartNoBottomUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mondetao.ui.i.EditAddrUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.mondetao.ui.i.AddAddrUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity android:name="com.mondetao.ui.category.Cat2PeiShiUI" >
+        </activity>
+        <activity android:name="com.mondetao.ui.category.Cat2XiangBaoUI" >
+        </activity>
+        <activity android:name="com.mondetao.ui.category.Cat2DigitalUI" >
+        </activity>
+
+        <!--
+        <activity
+            android:name="com.unionpay.uppayplugin.demo.EntryActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+
+        <activity android:name="com.unionpay.uppayplugin.demo.APKActivity" >
+        </activity>
+
+        <!-- 银联支付 -->
+        <activity
+            android:name="com.mondetao.ui.i.AccountMgrFragmentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.mondetao.ui.goods.ProductDetailFragmentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.mondetao.ui.goods.ColorSizeUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+          <activity
+            android:name="com.mondetao.ui.goods.NoColorSizeUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        
+        
+        
+        <activity
+            android:name="com.mondetao.ui.AboutUSUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        
+         <activity
+            android:name="com.mondetao.ui.i.MyPocketUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        
+        
+        
+        <activity
+            android:name="com.mondetao.ui.merchant.MerchantGoodsUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.mondetao.ui.category.TongZhuangCategoryUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.mondetao.ui.index.XieModule"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity android:name="com.unionpay.uppayplugin.demo.JARActivity" >
+        </activity>
+        <activity android:name="com.unionpay.uppay.PayActivity" >
+        </activity>
+        <activity
+            android:name="com.mondetao.ui.BuyConsultingListUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.mondetao.ui.category.Cat2NanZhuangUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.mondetao.ui.order.OrderFragmentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.mondetao.ui.i.MyFavModule"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity android:name="com.mondetao.ui.tg.TgModule" >
+        </activity>
+        <activity
+            android:name="com.mondetao.ui.goods.CommitOrderUI"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.mondetao.ui.goods.PayUI"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.mondetao.ui.goods.ProductItemsUI"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity android:name="com.mondetao.ui.IndexFragment" >
+        </activity>
+        <activity android:name="com.mondetao.ui.i.AddrMgrUI" >
+        </activity>
+        <activity android:name="com.mondetao.ui.goods.IndexSearchUI" >
+        </activity>
+        <activity android:name="com.mondetao.ui.xinyi.XinYiModule" >
+        </activity>
+        <activity android:name="com.mondetao.ui.goods.PingjiaShaiDanUI" >
+        </activity>
+        <activity android:name="com.mondetao.ui.KefuGuanjiaUI" >
+        </activity>
+        <activity android:name="com.mondetao.ui.i.IFagment" >
+        </activity>
+        <activity android:name="com.mondetao.ui.i.ILoginUI" >
+        </activity>
+        <activity android:name="com.mondetao.ui.goods.GoodsListUI" >
+        </activity>
+        <activity android:name="com.mondetao.ui.i.SuggestUI" >
+        </activity>
+         <activity android:name="com.mondetao.ui.i.SuggestAlreadyLoginUI" >
+        </activity>
+        
+        
+        <activity
+            android:name="com.mondetao.ui.goods.ShippingType"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity android:name="com.mondetao.ui.goods.GoodsDetailUI" >
+        </activity>
+        <activity
+            android:name="com.mondetao.ui.cart.CartModule"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity android:name="com.mondetao.ui.SetUI" >
+        </activity>
+        <activity android:name="com.mondetao.ui.category.Cat2NvZhuangUI" >
+        </activity>
+        <activity android:name="com.mondetao.ui.TgUI" >
+        </activity>
+        <activity android:name="com.mondetao.ui.tg.TgDetailUI" >
+        </activity>
+        <activity android:name="com.mondetao.ui.miaosha.MiaoShaModule" >
+        </activity>
+        <activity android:name="com.mondetao.ui.category.CategoryModule" >
+        </activity>
+        <activity android:name="com.mondetao.ui.FeatureUI" >
+        </activity>
+        
+        <activity
+            android:name="com.mondetao.ui.LoginUI"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        
+        
+        <!-- 二期  -->
+        
+        <activity
+            android:name="com.mondetao.ui.category.Cat2CybsUI"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        
+        <activity
+            android:name="com.mondetao.ui.category.Cat2BooksUI"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        
+        
+        
+        <activity
+            android:name="com.mondetao.ui.category.Cat2NvXieUI"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        
+        <activity
+            android:name="com.mondetao.ui.category.Cat2BanGongUI"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <!--  -->
+        <activity
+            android:name="com.mondetao.ui.i.MyMsgUI"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        
+        
+        
+        
+        
+        
+        
+          <activity
+            android:name="com.mondetao.ui.category.Cat2CarUI"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        
+          
+          <service android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+        
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
+
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="io.card.payment.DataEntryActivity" />
+          
+        
+        
+        
+        
+        
+        
+    </application>
+
+</manifest>
