@@ -226,5 +226,7 @@
     <color name="classify_search_background_color">#f0f0f0</color>
     <color name="about_version_color">#8c8c8c</color>
     <color name="dialog_title_color">#a2b8d3</color>
+    
+    <color name="primary_green_color">#abd916</color>
 
 </resources>

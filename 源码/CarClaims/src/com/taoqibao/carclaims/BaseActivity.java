@@ -1,26 +1,40 @@
 package com.taoqibao.carclaims;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Toast;
 
 import com.android.volley.Response.ErrorListener;
 import com.android.volley.VolleyError;
+import com.like.likeutils.network.GsonUtil;
+import com.like.likeutils.storage.SPUtils;
+import com.taoqibao.entity.LoginResult;
 import com.taoqibao.network.DataFetcher;
 
-public class BaseActivity extends Activity {
+public class BaseActivity extends FragmentActivity {
+	
+	protected static final String STATUS_SUCCESS = "success";
+	protected static final String STATUS_ERROR = "Error";
+	
+	public static final String SP_LOGIN_USER = "login_user";
 	
 	protected Context mContext;
 	protected DataFetcher mDataFetcher;
 	protected ErrorListener mErrorListener;
+	protected LoginResult mLoginUser;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		this.mContext = this;
 		mDataFetcher = DataFetcher.getInstance(mContext);
+		String loginUserStr = (String) SPUtils.get(mContext, SP_LOGIN_USER, "");
+		if(!TextUtils.isEmpty(loginUserStr)) {
+			mLoginUser = GsonUtil.gson.fromJson(loginUserStr, LoginResult.class);
+		}
 		mErrorListener = new ErrorListener() {
 			@Override
 			public void onErrorResponse(VolleyError err) {

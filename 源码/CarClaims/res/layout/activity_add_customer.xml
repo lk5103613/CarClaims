@@ -1,55 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#ABD732"
-       >
+        android:background="#ABD732" >
 
-        <ImageView
+        <LinearLayout
+            android:layout_width="40dip"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="back"
+            android:orientation="vertical" >
 
-            android:id="@+id/activity_2_btn_1"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/activity_2_3"
-            android:layout_centerVertical="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="10dp"
-            />
+            <ImageView
+                android:layout_width="8dip"
+                android:layout_height="15dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/back" />
+        </LinearLayout>
 
         <TextView
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="添加客户"
-            android:textSize="20dp"
-            android:textColor="#ffffff"/>
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
         <TextView
             android:id="@+id/activity_2_btn_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:text="保存"
-            android:textSize="17dp"
             android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="保存"
             android:textColor="#ffffff"
-            android:layout_marginRight="15dp"/>
-        </RelativeLayout>
+            android:textSize="17dp" />
+    </RelativeLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1000">
+        android:layout_weight="1000" >
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#F1F5F6"
             android:orientation="vertical"
             android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:background="#F1F5F6">
-            
+            android:paddingRight="20dp" >
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp" />
@@ -57,71 +63,73 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal" >
 
+                <EditText
+                    android:id="@+id/txt_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1000"
+                    android:background="@drawable/activity_2_shape"
+                    android:hint="客户姓名"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
 
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1000"
-                android:hint="客户姓名"
-                android:textSize="18dp"
-                android:background="@drawable/activity_2_shape"
-                android:padding="15dp"
-                android:singleLine="true"/>
                 <TextView
                     android:layout_width="15dp"
                     android:layout_height="wrap_content" />
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:background="@drawable/activity_2_shape_2">
+                    android:background="@drawable/activity_2_shape_2"
+                    android:orientation="horizontal" >
 
                     <TextView
-                        android:id="@+id/activity_2_btn_3"
+                        android:id="@+id/rdo_male"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="15dp"
                         android:text="先生"
-                        android:textSize="18dp"
-                        android:padding="15dp"
-                        />
+                        android:textColor="@color/rdo_rectangle_text_color"
+                        android:textSize="18dp" />
+
                     <TextView
-                        android:id="@+id/activity_2_btn_4"
+                        android:id="@+id/rdo_female"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="女士"
-                        android:textSize="18dp"
                         android:padding="15dp"
-                        android:background="#ABD732"
-                        android:textColor="#ffffff"
-                        />
+                        android:text="女士"
+                        android:textColor="@color/rdo_rectangle_text_color"
+                        android:textSize="18dp" />
                 </LinearLayout>
-
             </LinearLayout>
-            
-            
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="15dp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal" >
 
                 <LinearLayout
                     android:id="@+id/activity_2_btn_5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:background="@drawable/activity_2_shape">
-                    <TextView
+                    android:background="@drawable/activity_2_shape"
+                    android:orientation="horizontal" >
 
+                    <TextView
+                        android:id="@+id/lbl_car_prefix"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="18dp"
+                        android:padding="15dp"
                         android:text="沪"
-                        android:padding="15dp"/>
+                        android:textSize="18dp" />
+
                     <TextView
                         android:layout_width="10dp"
                         android:layout_height="wrap_content" />
@@ -130,46 +138,42 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_gravity="center_vertical"
-                        android:src="@drawable/activity_2_1"
-                        />
+                        android:src="@drawable/activity_2_1" />
+
                     <TextView
                         android:layout_width="15dp"
                         android:layout_height="wrap_content" />
-
-
-                    </LinearLayout>
-
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="15dp"
                     android:layout_height="wrap_content" />
 
-
                 <EditText
+                    android:id="@+id/txt_car_no"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1000"
                     android:background="@drawable/activity_2_shape"
-                    android:textSize="18dp"
-                    android:padding="15dp"
                     android:hint="车牌号"
-                    android:singleLine="true"/>
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
+            </LinearLayout>
 
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="15dp" />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp" />
 
             <EditText
+                android:id="@+id/txt_vin_code"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:singleLine="true"
-                android:textSize="18dp"
-                android:padding="15dp"
+                android:background="@drawable/activity_2_shape"
                 android:hint="VIN码"
-                android:background="@drawable/activity_2_shape"/>
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textSize="18dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -178,30 +182,29 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:background="@drawable/activity_2_shape">
+                android:background="@drawable/activity_2_shape"
+                android:orientation="horizontal" >
+
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1000"
                     android:background="@null"
-                    android:textSize="18dp"
-                    android:padding="15dp"
                     android:hint="沪"
-                    />
+                    android:padding="15dp"
+                    android:textSize="18dp" />
 
                 <ImageView
                     android:id="@+id/activity_2_btn_6"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/activity_2_2"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/activity_2_2" />
+
                 <TextView
                     android:layout_width="15dp"
                     android:layout_height="wrap_content" />
-
-                </LinearLayout>
-
+            </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -210,63 +213,62 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:background="@drawable/activity_2_shape"
+                android:orientation="horizontal" >
 
-                >
                 <TextView
                     android:layout_width="10dp"
                     android:layout_height="wrap_content" />
+
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/activity_2_4"
                     android:layout_gravity="center_vertical"
-                    />
-                    <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1000"
-                        android:background="@null"
-                        android:padding="15dp"
-                        android:textSize="18dp"
-                        android:hint="手机号码"
-                        android:singleLine="true"/>
+                    android:src="@drawable/activity_2_4" />
 
-                </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="15dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:background="@drawable/activity_2_shape"
-
-                >
-                <TextView
-                    android:layout_width="10dp"
-                    android:layout_height="wrap_content" />
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/activity_2_5"
-                    android:layout_gravity="center_vertical"
-                    />
                 <EditText
+                    android:id="@+id/txt_phone_num"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1000"
                     android:background="@null"
+                    android:hint="手机号码"
                     android:padding="15dp"
-                    android:textSize="18dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/activity_2_shape"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/activity_2_5" />
+
+                <EditText
+                    android:id="@+id/txt_engine_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1000"
+                    android:background="@null"
                     android:hint="发动机号"
-                    android:singleLine="true"/>
-
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
             </LinearLayout>
-
 
             <TextView
                 android:layout_width="wrap_content"
@@ -275,31 +277,30 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:background="@drawable/activity_2_shape"
+                android:orientation="horizontal" >
 
-                >
                 <TextView
                     android:layout_width="10dp"
                     android:layout_height="wrap_content" />
+
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/activity_2_6"
                     android:layout_gravity="center_vertical"
-                    />
+                    android:src="@drawable/activity_2_6" />
+
                 <EditText
+                    android:id="@+id/txt_brand_no"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1000"
                     android:background="@null"
-                    android:padding="15dp"
-                    android:textSize="18dp"
                     android:hint="品牌型号"
-                    android:singleLine="true"/>
-
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
             </LinearLayout>
-
 
             <TextView
                 android:layout_width="wrap_content"
@@ -308,43 +309,41 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:background="@drawable/activity_2_shape"
+                android:orientation="horizontal" >
 
-                >
                 <TextView
                     android:layout_width="10dp"
                     android:layout_height="wrap_content" />
+
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/activity_2_7"
                     android:layout_gravity="center_vertical"
-                    />
+                    android:src="@drawable/activity_2_7" />
+
                 <EditText
+                    android:id="@+id/txt_insurance"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1000"
                     android:background="@null"
-                    android:padding="15dp"
-                    android:textSize="18dp"
                     android:hint="保险公司"
-                    android:singleLine="true"/>
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
 
                 <ImageView
                     android:id="@+id/activity_2_btn_7"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/activity_2_2"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/activity_2_2" />
 
                 <TextView
                     android:layout_width="15dp"
                     android:layout_height="wrap_content" />
-
-
             </LinearLayout>
-
 
             <TextView
                 android:layout_width="wrap_content"
@@ -353,29 +352,29 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:background="@drawable/activity_2_shape"
+                android:orientation="horizontal" >
 
-                >
                 <TextView
                     android:layout_width="10dp"
                     android:layout_height="wrap_content" />
+
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/activity_2_8"
                     android:layout_gravity="center_vertical"
-                    />
+                    android:src="@drawable/activity_2_8" />
+
                 <EditText
+                    android:id="@+id/txt_insurance_no"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1000"
                     android:background="@null"
-                    android:padding="15dp"
-                    android:textSize="18dp"
                     android:hint="保单号"
-                    android:singleLine="true"/>
-
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
             </LinearLayout>
 
             <TextView
@@ -386,19 +385,19 @@
                 android:id="@+id/activity_2_btn_8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textSize="20dp"
-                android:textColor="#ffffff"
-                android:text="保存"
+                android:background="@drawable/acitivity_1_shape_1"
                 android:gravity="center"
-                android:background="@drawable/acitivity_1_shape_1"/>
+                android:padding="10dp"
+                android:text="保存"
+                android:clickable="true"
+                android:onClick="save"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="20dp" />
-
-
         </LinearLayout>
+    </ScrollView>
 
-
-        </ScrollView>
 </LinearLayout>

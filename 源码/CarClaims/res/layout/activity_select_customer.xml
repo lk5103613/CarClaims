@@ -37,6 +37,8 @@
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:gravity="center"
+            android:clickable="true"
+            android:onClick="addCustomer"
             android:orientation="vertical" >
 
             <ImageView
@@ -79,8 +81,38 @@
         android:layout_width="match_parent"
         android:layout_height="0.5dip"
         android:background="#b0b0b0" />
+    
+    
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
 
-    <ScrollView
+        <ListView
+            android:id="@+id/customer_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:divider="@null" />
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/show_head_toast_bg"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+
+        <com.taoqibao.widget.sortlistview.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center" />
+    </FrameLayout>
+
+    <!-- <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1" >
@@ -597,7 +629,7 @@
                     android:textSize="11sp" />
             </LinearLayout>
         </RelativeLayout>
-    </ScrollView>
+    </ScrollView> -->
 
     <View
         android:layout_width="fill_parent"

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#d0d0d0" />
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+        android:background="#f3f3f3"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dp"
+        android:text="A"
+        android:textColor="@android:color/black"
+        android:textSize="11sp" />
+
+    <LinearLayout
+        android:id="@+id/userLL"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:clickable="true"
+        android:background="@color/white"
+        android:weightSum="20"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:layout_marginLeft="10dip"
+            android:gravity="center_vertical"
+            android:text="阿当黎可"
+            android:textColor="@android:color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/lbl_car_no"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:layout_marginLeft="20dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="沪ASH001"
+            android:textColor="@android:color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/lbl_phone_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:layout_marginLeft="20dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dp"
+            android:text="137898374758"
+            android:textColor="@android:color/black"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="10dip"
+        android:background="#d0d0d0" />
+
+</LinearLayout>

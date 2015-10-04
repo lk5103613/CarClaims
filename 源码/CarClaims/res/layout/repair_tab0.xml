@@ -74,7 +74,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="10dip"
+                    android:layout_marginLeft="10dip"
                     android:text="阿当  沪ASH001  13888888888  大众  途观  1.8T"
                     android:textColor="@android:color/black"
                     android:textSize="12sp" />
@@ -173,7 +173,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/biankuang_01"
                     android:hint="里程数：请填写您的当前历程数"
-                    android:paddingLeft="10dip"
+                    android:layout_marginLeft="10dip"
                     android:textSize="13sp" />
 
                 <LinearLayout

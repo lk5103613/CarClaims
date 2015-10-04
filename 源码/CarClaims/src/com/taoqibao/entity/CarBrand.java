@@ -2,7 +2,6 @@ package com.taoqibao.entity;
 
 
 public class CarBrand {
-
 	public int brandId;
 	public String ypBrandId;
 	public String brandName;
@@ -20,5 +19,4 @@ public class CarBrand {
 	public int isDelete;
 	public int isCommon;
 	public String carBrandImgDomainUrl;
-
 }

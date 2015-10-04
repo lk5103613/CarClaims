@@ -1,5 +1,7 @@
 package com.taoqibao.network;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.Map;
 
 import android.content.Context;
@@ -77,8 +79,12 @@ public class DataFetcher extends DataFetcherBase {
 	}
 	
 	public void fetchCustomerByKey(String idOwnOrg, String keyWord, Listener<String> listener, ErrorListener errorListener) {
-		Map<String, String> params = NetParamGenerator.getMapParams(APIS.GET_CUSTOMER_BY_KEY, idOwnOrg, keyWord);
-		fetchData(APIS.GET_CUSTOMER_BY_KEY, params, listener, errorListener);
+		try {
+			keyWord = URLEncoder.encode(keyWord, "utf-8");
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+		fetchData(APIS.GET_CUSTOMER_BY_KEY, listener, errorListener, idOwnOrg, keyWord);
 	}
 	
 	public void fetchAddCustomer(String name, String cellPhone, String idOwnOrg, String carNo, String carPrefix, String sex, 

@@ -5,12 +5,6 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 
-
-
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -18,14 +12,12 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.FrameLayout;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class MainActivity extends FragmentActivity {
 private FragmentManager fragmentManager;
 	
-	private Map<String, Fragment> fragmentMap = new HashMap();
+	private Map<String, Fragment> fragmentMap = new HashMap<String, Fragment>();
 	
 	private LinearLayout tab1,tab2,tab3,tab4;
 	
@@ -38,7 +30,6 @@ private FragmentManager fragmentManager;
 		tab2 = (LinearLayout) findViewById(R.id.tab2);
 		tab3 = (LinearLayout) findViewById(R.id.tab3);
 		tab4 = (LinearLayout) findViewById(R.id.tab4);
-	 
 		
 		tab1.setOnClickListener(new OnClickListener() {
 			@Override
@@ -114,7 +105,4 @@ private FragmentManager fragmentManager;
 		}
 	}
 	
-	
-	
-
 }
