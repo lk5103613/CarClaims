@@ -2,13 +2,13 @@ package com.taoqibao.network;
 
 public class APIS {
 	
-	public static final String BASE_URL = "http://121.40.28.92:8080";
-	public static final String BASE_URL2 = "http://www.taoqiball.com";
+	public static final String BASE_URL2 = "http://121.40.28.92:8080";
+	public static final String BASE_URL = "http://www.taoqiball.com";
 	
 	public static final String LOGIN = BASE_URL2 + "/tqb1.0/mlogin/login.action?code=%1&username=%2&password=%3//登陆";
 	
 	public static final String GET_PROVIENCE_LIST = BASE_URL2 + "/tqb1.0/mobileCenterConstant/getProvinceList.action//获取省份列表";
-	public static final String GET_CITY_LIST = BASE_URL2 + "/tqb1.0/mobileCenterConstant/%1/getChildrenList.action//获取城市列表";
+	public static final String GET_AREA_LIST = BASE_URL2 + "/tqb1.0/mobileCenterConstant/%1/getChildrenList.action//获取城市列表";
 	
 	// Car
 	public static final String GET_CAR_PRE_FIX = BASE_URL2 + "/tqb1.0/mobileCenterConstant/getCarPreFix.action//获取车牌号前缀";

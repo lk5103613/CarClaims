@@ -14,6 +14,7 @@ import com.taoqibao.entity.CarLine;
 import com.taoqibao.entity.CarMain;
 import com.taoqibao.entity.CommonResult;
 import com.taoqibao.entity.Customer;
+import com.taoqibao.entity.Insurance;
 import com.taoqibao.entity.LoginResult;
 import com.taoqibao.entity.Stuff;
 import com.taoqibao.entity.StuffCategories;
@@ -36,8 +37,8 @@ public class GsonConverter {
 		return GsonUtil.gson.fromJson(response, type);
 	}
 	
-	public static Map<String, CarBrand> toBrandMap(String response) {
-		Type type = new TypeToken<Map<String, CarBrand>>(){}.getType();
+	public static Map<String, List<CarBrand>> toBrandMap(String response) {
+		Type type = new TypeToken<Map<String, List<CarBrand>>>(){}.getType();
 		return GsonUtil.gson.fromJson(response, type);
 	}
 	
@@ -58,6 +59,11 @@ public class GsonConverter {
 	
 	public static Map<String, Brand> toBrandList(String response) {
 		Type type = new TypeToken<Map<String, Brand>>(){}.getType();
+		return GsonUtil.gson.fromJson(response, type);
+	}
+	
+	public static List<Insurance> toInsuranceList(String response) {
+		Type type = new TypeToken<List<Insurance>>(){}.getType();
 		return GsonUtil.gson.fromJson(response, type);
 	}
 	

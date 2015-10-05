@@ -2,6 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     android:orientation="vertical" >
 
     <RelativeLayout
@@ -92,6 +94,7 @@
                         android:layout_height="wrap_content"
                         android:padding="15dp"
                         android:text="先生"
+                        android:background="@drawable/rdo_rectangle_bg"
                         android:textColor="@color/rdo_rectangle_text_color"
                         android:textSize="18dp" />
 
@@ -101,6 +104,7 @@
                         android:layout_height="wrap_content"
                         android:padding="15dp"
                         android:text="女士"
+                        android:background="@drawable/rdo_rectangle_bg"
                         android:textColor="@color/rdo_rectangle_text_color"
                         android:textSize="18dp" />
                 </LinearLayout>
@@ -120,6 +124,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/activity_2_shape"
+                    android:clickable="true"
+                    android:onClick="selectPrefix"
                     android:orientation="horizontal" >
 
                     <TextView
@@ -135,6 +141,7 @@
                         android:layout_height="wrap_content" />
 
                     <ImageView
+                        android:id="@+id/drop_target"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_gravity="center_vertical"
@@ -278,6 +285,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/activity_2_shape"
+                android:clickable="true"
+                android:onClick="selectCarBrand"
                 android:orientation="horizontal" >
 
                 <TextView
@@ -290,8 +299,8 @@
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/activity_2_6" />
 
-                <EditText
-                    android:id="@+id/txt_brand_no"
+                <TextView
+                    android:id="@+id/lbl_brand_no"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1000"
@@ -310,6 +319,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/activity_2_shape"
+                android:clickable="true"
+                android:onClick="selectInsurance"
                 android:orientation="horizontal" >
 
                 <TextView
@@ -322,8 +333,8 @@
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/activity_2_7" />
 
-                <EditText
-                    android:id="@+id/txt_insurance"
+                <TextView
+                    android:id="@+id/lbl_insurance"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1000"

@@ -9,9 +9,7 @@ import android.content.Context;
 import com.android.volley.Response.ErrorListener;
 import com.android.volley.Response.Listener;
 import com.like.likeutils.network.DataFetcherBase;
-import com.like.likeutils.network.GsonUtil;
 import com.like.likeutils.network.NetParamGenerator;
-import com.taoqibao.entity.Stuff;
 import com.taoqibao.entity.StuffForAdd;
 
 public class DataFetcher extends DataFetcherBase {
@@ -37,8 +35,8 @@ public class DataFetcher extends DataFetcherBase {
 		fetchData(APIS.GET_PROVIENCE_LIST, listener, errorListener);
 	}
 	
-	public void fetchCityList(String proId, Listener<String> listener, ErrorListener errorListener) {
-		fetchData(APIS.GET_CITY_LIST, listener, errorListener, proId);
+	public void fetchAreaList(String proId, Listener<String> listener, ErrorListener errorListener) {
+		fetchData(APIS.GET_AREA_LIST, listener, errorListener, proId);
 	}
 	
 	public void fetchCarPreFix(Listener<String> listener, ErrorListener errorListener) {

@@ -1,5 +1,6 @@
 package com.taoqibao.entity;
 
+import com.taoqibao.widget.sortlistview.SortModel;
 
 public class CarBrand {
 	public int brandId;
@@ -19,4 +20,5 @@ public class CarBrand {
 	public int isDelete;
 	public int isCommon;
 	public String carBrandImgDomainUrl;
+	public SortModel sortModel;
 }

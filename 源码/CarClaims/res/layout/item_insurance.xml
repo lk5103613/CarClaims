@@ -19,6 +19,7 @@
             android:src="@drawable/activity_3_3" />
 
         <TextView
+            android:id="@+id/insurance_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
