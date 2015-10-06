@@ -23,7 +23,6 @@
         android:id="@+id/userLL"
         android:layout_width="fill_parent"
         android:layout_height="40dip"
-        android:clickable="true"
         android:background="@color/white"
         android:weightSum="20"
         android:orientation="horizontal" >

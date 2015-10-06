@@ -75,11 +75,9 @@ public class SelectCustomerActivity extends BaseActivity {
 					break;
 				case 2:
 					intent = new Intent(mContext, RepairActivity.class);
-					startActivity(intent);
 					break;
 				case 3:
 					intent = new Intent(mContext, ClaimsActivity.class);
-					startActivity(intent);
 					break;
 				default:
 					return;
