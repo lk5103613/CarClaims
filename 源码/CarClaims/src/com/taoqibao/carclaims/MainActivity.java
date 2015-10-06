@@ -39,7 +39,6 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 		mTab4.setOnClickListener(this);
 		mTabs = new ViewGroup[]{mTab1, mTab2, mTab3, mTab4};
 		mViewPager.addOnPageChangeListener(new OnPageChangeListener() {
-			
 			@Override
 			public void onPageSelected(int index) {
 				if(index == mCurrentIndex)

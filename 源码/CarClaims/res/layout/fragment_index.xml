@@ -102,7 +102,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/activity_btn_2"
+                    android:id="@+id/btn_repair"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -157,7 +157,7 @@
                 android:paddingRight="10dp" >
 
                 <LinearLayout
-                    android:id="@+id/activity_btn_4"
+                    android:id="@+id/btn_claims"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -235,7 +235,7 @@
                 android:paddingRight="30dp" >
 
                 <RelativeLayout
-                    android:id="@+id/activity_btn_7"
+                    android:id="@+id/btn_call"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"

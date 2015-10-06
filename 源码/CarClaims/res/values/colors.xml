@@ -228,5 +228,6 @@
     <color name="dialog_title_color">#a2b8d3</color>
     
     <color name="primary_green_color">#abd916</color>
+    <color name="primary_main_bg">#f3f3f3</color>
 
 </resources>

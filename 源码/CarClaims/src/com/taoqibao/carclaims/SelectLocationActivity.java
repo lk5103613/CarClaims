@@ -20,10 +20,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Response.Listener;
+import com.like.likeutils.network.GsonUtil;
 import com.taoqibao.entity.AreaInfo;
 import com.taoqibao.network.GsonConverter;
 
 public class SelectLocationActivity extends BaseActivity {
+	
+	public static final String RESULT_PRO = "result_pro";
+	public static final String RESULT_CITY = "result_city";
+	public static final String RESULT_AREA = "result_area";
+	public static final String RESULT_DETAIL_ADDRESS = "result_detail_address";
 
 	private PopupWindow mProWindow, mCityWindow, mAddressWindow;
 	private ImageView mDropTarget1, mDropTarget2, mDropTarget3;
@@ -213,7 +219,16 @@ public class SelectLocationActivity extends BaseActivity {
 			Toast.makeText(mContext, "«Î ‰»ÎœÍœ∏µÿ÷∑", Toast.LENGTH_SHORT).show();
 			return;
 		}
+		String proStr = GsonUtil.gson.toJson(mPro);
+		String cityStr = GsonUtil.gson.toJson(mCity);
+		String areaStr = GsonUtil.gson.toJson(mArea);
 		Intent intent = new Intent();
+		intent.putExtra(RESULT_PRO, proStr);
+		intent.putExtra(RESULT_CITY, cityStr);
+		intent.putExtra(RESULT_AREA, areaStr);
+		intent.putExtra(RESULT_DETAIL_ADDRESS, detailAddress);
+		setResult(RESULT_OK, intent);
+		this.finish();
 	}
 
 }

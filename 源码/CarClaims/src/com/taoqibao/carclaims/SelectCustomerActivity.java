@@ -1,6 +1,5 @@
 package com.taoqibao.carclaims;
 
-
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
@@ -8,6 +7,8 @@ import java.util.Locale;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -23,6 +24,8 @@ import com.taoqibao.widget.sortlistview.SortModel;
 
 public class SelectCustomerActivity extends BaseActivity {
 	
+	public static final String TYPE = "type";
+	
 	private String mKeyword;
 	
 	private ListView mCustomerList;
@@ -32,6 +35,7 @@ public class SelectCustomerActivity extends BaseActivity {
 	private SideBar mSideBar;
 	private TextView mLblDialog;
 	private List<Customer> mCustomers;
+	private int mType = -1;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +49,7 @@ public class SelectCustomerActivity extends BaseActivity {
 	
 	private void initView() {
 		mKeyword = "";
+		mType = getIntent().getIntExtra(TYPE, -1);
 		mCharacterParser = CharacterParser.getInstance();
 		mCustomerComparator = new CustomerComparator();
 		mCustomerList = (ListView) findViewById(R.id.customer_list);
@@ -54,11 +59,33 @@ public class SelectCustomerActivity extends BaseActivity {
 		mSideBar.setOnTouchingLetterChangedListener(new OnTouchingLetterChangedListener() {
 			@Override
 			public void onTouchingLetterChanged(String s) {
-				//该字母首次出现的位置
 				int position = mAdapter.getPositionForSection(s.charAt(0));
-				if(position != -1){
+				if(position != -1) {
 					mCustomerList.setSelection(position);
 				}
+			}
+		});
+		mCustomerList.setOnItemClickListener(new OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				Intent intent = null;
+				switch (mType) {
+				case 1:
+					break;
+				case 2:
+					intent = new Intent(mContext, RepairActivity.class);
+					startActivity(intent);
+					break;
+				case 3:
+					intent = new Intent(mContext, ClaimsActivity.class);
+					startActivity(intent);
+					break;
+				default:
+					return;
+				}
+				if(intent != null)
+					startActivity(intent);
 			}
 		});
 	}
