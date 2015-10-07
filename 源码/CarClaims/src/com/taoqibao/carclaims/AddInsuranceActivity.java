@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 import com.like.likeutils.network.GsonUtil;
 import com.taoqibao.entity.AreaInfo;
+import com.taoqibao.entity.Customer;
 
 public class AddInsuranceActivity extends BaseActivity {
 	
@@ -19,6 +20,7 @@ public class AddInsuranceActivity extends BaseActivity {
 	private String mDetailAddress;
 	
 	private TextView mLblLocation;
+	private TextView mLblCustomer;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -30,11 +32,18 @@ public class AddInsuranceActivity extends BaseActivity {
 	
 	private void initView() {
 		mLblLocation = (TextView) findViewById(R.id.lbl_location);
+		mLblCustomer = (TextView) findViewById(R.id.lbl_customer);
 	}
 	
 	public void selectArea(View v) {
 		Intent intent = new Intent(mContext, SelectLocationActivity.class);
 		startActivityForResult(intent, REQUEST_SELECT_LOCATION);
+	}
+	
+	public void selectCustomer(View view) {
+		Intent intent = new Intent(mContext, SelectCustomerActivity.class);
+		intent.putExtra(SelectCustomerActivity.TYPE, 1);
+		startActivityForResult(intent, REQUEST_SELECT_USER);
 	}
 	
 	@Override
@@ -51,6 +60,11 @@ public class AddInsuranceActivity extends BaseActivity {
 				mArea = GsonUtil.gson.fromJson(areaStr, AreaInfo.class);
 				String showStr = mPro.regionName + " " + mCity.regionName + " " + mArea.regionName + " " + mDetailAddress; 
 				mLblLocation.setText(showStr);
+				break;
+			case REQUEST_SELECT_USER:
+				String customerStr = data.getStringExtra(SelectCustomerActivity.RESULT_CUSTOMER);
+				Customer customer = GsonUtil.gson.fromJson(customerStr, Customer.class);
+				mLblCustomer.setText(customer.name);
 				break;
 			default:
 				break;

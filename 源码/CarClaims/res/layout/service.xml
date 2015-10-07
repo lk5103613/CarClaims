@@ -42,9 +42,11 @@
         <EditText
             android:id="@+id/moeny"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:gravity="center"
             android:hint="工时费"
             android:textSize="16sp" />
@@ -60,9 +62,11 @@
         <EditText
             android:id="@+id/skillServices"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1.5"
             android:background="@drawable/sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:gravity="center"
             android:hint="技师服务"
             android:textSize="16sp" />
@@ -70,12 +74,16 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center"
             android:layout_weight="0.8" >
 
             <ImageButton
                 android:id="@+id/serviceDelete"
-                android:layout_width="40dp"
-                android:layout_height="56dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
                 android:background="#ffff"
                 android:src="@drawable/delete" />
         </LinearLayout>

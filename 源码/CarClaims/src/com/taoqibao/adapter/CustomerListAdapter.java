@@ -30,7 +30,7 @@ public class CustomerListAdapter extends BaseAdapter {
 	}
 
 	@Override
-	public Object getItem(int position) {
+	public Customer getItem(int position) {
 		return mCustomers.get(position);
 	}
 

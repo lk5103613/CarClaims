@@ -38,7 +38,7 @@
             android:gravity="center"
             android:maxLines="3"
             android:text="马勒机油滤清器  OX 196/3D ECO"
-            android:textSize="18sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:layout_width="10dp"
@@ -47,8 +47,10 @@
         <EditText
             android:id="@+id/partCount"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:background="@drawable/sp"
             android:gravity="center"
             android:hint="数量"
@@ -61,8 +63,10 @@
         <EditText
             android:id="@+id/partPrice"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:background="@drawable/sp"
             android:gravity="center"
             android:hint="单价"
@@ -76,8 +80,10 @@
 
             <ImageButton
                 android:id="@+id/partDelete"
-                android:layout_width="40dp"
-                android:layout_height="56dp"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
                 android:background="#ffff"
                 android:src="@drawable/delete" />
         </LinearLayout>

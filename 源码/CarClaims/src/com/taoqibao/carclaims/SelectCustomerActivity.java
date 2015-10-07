@@ -13,6 +13,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.android.volley.Response.Listener;
+import com.like.likeutils.network.GsonUtil;
 import com.taoqibao.adapter.CustomerListAdapter;
 import com.taoqibao.entity.Customer;
 import com.taoqibao.entity.CustomerComparator;
@@ -25,6 +26,7 @@ import com.taoqibao.widget.sortlistview.SortModel;
 public class SelectCustomerActivity extends BaseActivity {
 	
 	public static final String TYPE = "type";
+	public static final String RESULT_CUSTOMER = "result_customer";
 	
 	private String mKeyword;
 	
@@ -69,10 +71,16 @@ public class SelectCustomerActivity extends BaseActivity {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
+				Customer customer = mAdapter.getItem(position);
+				String customerStr = GsonUtil.gson.toJson(customer);
 				Intent intent = null;
 				switch (mType) {
 				case 1:
-					break;
+					intent = new Intent();
+					intent.putExtra(RESULT_CUSTOMER, customerStr);
+					setResult(RESULT_OK, intent);
+					SelectCustomerActivity.this.finish();
+					return;
 				case 2:
 					intent = new Intent(mContext, RepairActivity.class);
 					break;
